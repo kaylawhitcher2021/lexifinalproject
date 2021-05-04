@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="This sentence will appear under the link in search engine results.">
+	<meta name="keywords" content="list,of,words,separated,by,commas,that,describe,your,site">
+	<meta name="author" content="Your name goes here">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- shiv which should be a shim -->
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- tab title -->
+	<title>Here is a love story</title>
+
+	<!-- favicon link -->
+	<link rel="shortcut icon" href="images/12.jpg">
+
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+
+    <!-- slicknav -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>   <!-- Link to jQuery Content Delivery Network - Necessary for SlickNav to work correctly -->
+    <script src="js/jquery.slicknav.min.js"></script>                     <!-- Link to the slicknav file inside the js folder - Necessary for SlickNav to work correctly -->
+
+	<!-- slicknav javascript - this javascript code will use the UL inside the nav_menu tag to build the same menu in slickNav format -->
+	<script type="text/javascript">
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    </script>
+
+</head>
+
+
+<body>
+
+	<header class="clearfix">
+		<a href="index.html"><img src=images/12.jpg></a>
+		<h1><a href="index.html">Two Hearts Become One on 6.25.2022 </a></h1>
+	</header>
+
+    <nav id="mobilemenu"></nav>
+	<nav class="nav_menu">
+    	<ul>
+			<li><a href="index.html" class="current">Home</a></li>
+        	<li><a href="remind.html" class="current">Remind Me</a></li>
+        	<li><a href="moments.html" class="current">Moments</a></li>
+        	<li><a href="gallery.html" class="current">Gallery</a></li>
+        	
+    	</ul>
+	</nav>
+
+
+	<section id="homepage">
+		<h3>Marry me Lexi<br>(p.s She said yes)</h3>
+		<img src="images/2.jpg">
+
+		<div id="how did we get here">
+			<h4>So how did we get here...</h4>
+			<p>Justin & Lexi~ a story of two people truly destined to be together. It all started in the late 1980’s when both of our dads were stationed together on a US Navy ship in California. Fast forward 30 years... our dads got back in touch & started talking often. This led to my dad talking to Justin during Justin’s process of joining the Navy. On a sunny April day, my dad told me about someone that thought I was pretty. After seeing pictures of Justin, i followed him on Instagram for him to then friend me on Facebook. A few weeks later, while my dad and I were driving,  dad unexpectedly called Justin saying how much i wanted to get to know him. Later that night we talked for over an hour! The following Sunday, Justin drove a few hours to my grandparents home in Maine to meet me. After we so nervously met, we left for a date... without any actual plans. We talked for hours as if we’d known each other our whole lives. Like we were long lost friends just catching each other up on our past 20 years. We accidentally drove for hours and hours way up towards the top of the state. After dinner & a couple hours visiting back with my whole family, it was time for Justin to go. As they dragged out their inevitable goodbye, they hugged & justin hopped in his pickup. As he started backing away & I was walking up my grandparents porch, he opened his door then hollered my name. I turned around and he was running up to me! He grabbed me for another, longer hug and pinky promised me he’d drive safe back to Connecticut. It felt like a moment straight out of a movie. Later that night we both told our parents about how we’d both just met someone unlike anyone we’d ever known before. As cliche as the saying goes, the rest truly was history. Over the next two years we spent hundreds of hours talking on the phone/ FaceTiming. We visited each other as often as our schedules allowed & emailed as much as possible while Justin would be under the sea. We fell in love quick, like it was the easiest thing in the world to do. And the love that we share has always been so genuine and so real. We found the kind of love that most people believe only exists in movies or fairytales, except ours is even greater. We have always just truly understood each other in the most special way, that no one ever has before. We just became best friends from the first day we met. Over time we focused on building that friendship, and I think that’s what has made our love and bond so strong, while having to spend so much time apart with little communication at times. No matter what challenges we’ve ever faced, we’ve always remembered that our love is greater than it all. We always say that our situation of long distance forced us to talk til the point that we literally knew everything about each other. I think that’s what sets our love apart. We both always knew one day justin would get down on one knee and ask for my hand. He did!!! & That was the most special moment of our lives. Now we get to look forward to making it official with all the people we love most in the world. The happiness that we both feel is just truly so wonderfully overwhelming. We’ve been together for three years, yet it feels like we’ve known each other all of our lives. We are genuinely more blessed than we deserve. I didn’t find my Prince Charming, I found my Justin & that’s a million times better in any lifetime.</p>
+			
+		</div>
+
+	</section>
+
+	<div><button onclick="topFunction()" id="cornerBtn" title="Go to top">Return To Top</button></div>
+	<script>
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+		document.getElementById("cornerBtn").style.display = "block";
+	  } else {
+		document.getElementById("cornerBtn").style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
+	</script>
+
+
+	<script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+	</script>
+
+	<footer>
+		<p>&copy; <span id="copyright"></span> #wefoundourhappyeverafter Kayla Whitcher Productions</p>
+	</footer>
+
+</body>
+</html>
